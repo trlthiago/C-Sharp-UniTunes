@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.23107.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UniTunesApi", "UniTunesApi\UniTunesApi.csproj", "{F36680E4-65C2-4694-93E9-55BA66187E0C}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UniTunes.Core", "UniTunes.Core\UniTunes.Core.csproj", "{74461459-D554-49C5-9F3B-5C927B277F9D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UniTunes.WebApi", "UniTunes.WebApi\UniTunes.WebApi.csproj", "{F36680E4-65C2-4694-93E9-55BA66187E0C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,14 +13,14 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{F36680E4-65C2-4694-93E9-55BA66187E0C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F36680E4-65C2-4694-93E9-55BA66187E0C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F36680E4-65C2-4694-93E9-55BA66187E0C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F36680E4-65C2-4694-93E9-55BA66187E0C}.Release|Any CPU.Build.0 = Release|Any CPU
 		{74461459-D554-49C5-9F3B-5C927B277F9D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{74461459-D554-49C5-9F3B-5C927B277F9D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{74461459-D554-49C5-9F3B-5C927B277F9D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{74461459-D554-49C5-9F3B-5C927B277F9D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F36680E4-65C2-4694-93E9-55BA66187E0C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F36680E4-65C2-4694-93E9-55BA66187E0C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F36680E4-65C2-4694-93E9-55BA66187E0C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F36680E4-65C2-4694-93E9-55BA66187E0C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
