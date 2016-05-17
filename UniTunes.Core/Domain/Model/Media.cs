@@ -6,18 +6,24 @@ namespace UniTunes.Core.Domain.Model
 {
     public abstract class Media : Entity
     {
-        public string Name { get; private set; }
-        public string Description { get; private set; }
-        public List<User> Author { get; private set; }
-        public string ImagePath { get; private set; }
-        public decimal Price { get; private set; }
-        public bool IsAvailable { get; private set; }
-        public Category Category { get; private set; }
+        public string Name { get; set; }
+        public string Description { get; set; }
+        public List<User> Author { get; set; }
+        public string ImagePath { get; set; }
+        public decimal Price { get; set; }
+        public bool IsAvailable { get; set; }
+        public Category Category { get; set; }
+
+        protected Media()
+        {
+            //EF
+            Author = new List<User>();
+        }
     }
 
     public abstract class Audible : Media
     {
-        public TimeSpan Duration { get; private set; }
+        public TimeSpan Duration { get; set; }
     }
 
     public class Music : Audible
@@ -26,16 +32,16 @@ namespace UniTunes.Core.Domain.Model
 
     public class PodCast : Audible
     {
-        public string UrlFeed { get; private set; }
+        public string UrlFeed { get; set; }
     }
 
     public class Video : Audible
     {
-        public int Quality { get; private set; }
+        public int Quality { get; set; }
     }
 
     public class Book : Media
     {
-        public int Pages { get; private set; }
+        public int Pages { get; set; }
     }
 }
